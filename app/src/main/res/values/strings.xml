@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Tip Calculator SP22</string>
+    <string name="bill_amount">Bill Amount</string>
+    <string name="currency_symbol">$</string>
 </resources>

@@ -3,14 +3,20 @@ package edu.ivytech.tipcalculatorsp22
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
+import android.widget.RadioGroup
 import edu.ivytech.tipcalculatorsp22.databinding.ActivityMainBinding
 import java.text.DecimalFormat
 import java.text.DecimalFormatSymbols
 import java.text.NumberFormat
+import kotlin.math.ceil
+import kotlin.math.round
+
+enum class Rounding{NOROUND, ROUNDTIP, ROUNDTOTAL}
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding : ActivityMainBinding
     private var tipPercent = .15
+    private var rounding : Rounding = Rounding.NOROUND
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -27,7 +33,13 @@ class MainActivity : AppCompatActivity() {
             tipPercent = value / 100.0
             val percentFormat = NumberFormat.getPercentInstance()
             binding.tipPercentDisplay.text = percentFormat.format(tipPercent)
-
+        }
+        binding.radioGroup.setOnCheckedChangeListener { group : RadioGroup, checkedId : Int ->
+            when (checkedId) {
+                R.id.noRoundBtn -> rounding = Rounding.NOROUND
+                R.id.roundTipBtn -> rounding = Rounding.ROUNDTIP
+                R.id.roundTotalBtn -> rounding = Rounding.ROUNDTOTAL
+            }
         }
     }
 
@@ -40,6 +52,15 @@ class MainActivity : AppCompatActivity() {
 
         var tipAmount = billAmount * tipPercent
         var totalAmount = billAmount + tipAmount
+
+        if(rounding == Rounding.ROUNDTIP) {
+            tipAmount = ceil(tipAmount)
+            totalAmount = billAmount + tipAmount
+        } else if(rounding == Rounding.ROUNDTOTAL) {
+            totalAmount = ceil(totalAmount)
+            tipAmount = totalAmount - billAmount
+        }
+
 
         val currencyFormat = NumberFormat.getCurrencyInstance()
         val symbol = DecimalFormatSymbols()

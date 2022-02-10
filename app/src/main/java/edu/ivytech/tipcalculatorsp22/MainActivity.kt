@@ -22,6 +22,13 @@ class MainActivity : AppCompatActivity() {
         binding.splitBillDropdown.setText(items[0], false)
 
         binding.calculateBtn.setOnClickListener { calculateAndDisplay() }
+
+        binding.tipPercentSlider.addOnChangeListener { slider, value, fromUser ->
+            tipPercent = value / 100.0
+            val percentFormat = NumberFormat.getPercentInstance()
+            binding.tipPercentDisplay.text = percentFormat.format(tipPercent)
+
+        }
     }
 
     private fun calculateAndDisplay() {

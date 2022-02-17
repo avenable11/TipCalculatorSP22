@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ThemeOverlay.TipCalculatorSP22.DarkOutline" parent="">
+        <item name="colorPrimary">@color/primaryDarkColor</item>
+        <item name="editTextStyle">@style/Widget.TipCalculatorSP22.TextInputEditText.DarkCursor</item>
+        <!--item name="colorControlActivated">@color/secondaryColor</item-->
+    </style>
+    <style name="ThemeOverlay.TipCalculatorSP22.DarkCursor" parent="">
+        <item name="colorControlActivated">@color/primaryDarkColor</item>
+    </style>
+
+    <style name="Widget.TipCalculatorSP22.TextInputLayout.DarkOutline"
+        parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.TipCalculatorSP22.DarkOutline</item>
+
+    </style>
+
+    <style name="Widget.TipCalculatorSP22.TextInputEditText.DarkCursor"
+        parent="Widget.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.TipCalculatorSP22.DarkCursor</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <style name="Widget.TipCalculator.Slider.Bright" parent="Widget.MaterialComponents.Slider">
+        <item name="trackColorActive">@color/primaryNightColor</item>
+        <item name="trackColorInactive" alpha=".5">@color/ivyTechGray</item>
+        <item name="thumbColor">@color/primaryNightColor</item>
+    </style>
+</resources>

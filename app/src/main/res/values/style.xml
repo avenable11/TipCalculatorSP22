@@ -20,6 +20,9 @@
         <item name="materialThemeOverlay">@style/ThemeOverlay.TipCalculatorSP22.DarkCursor</item>
         <item name="android:textColor">@color/text_color</item>
     </style>
+    <style name="Widget.TipCalculatorSP22.RadioButton.CustomText" parent="Widget.MaterialComponents.CompoundButton.RadioButton">
+        <item name="android:textAppearance">?attr/textAppearanceBody2</item>
+    </style>
 
     <style name="Widget.TipCalculator.Slider.Bright" parent="Widget.MaterialComponents.Slider">
         <item name="trackColorActive">@color/primaryNightColor</item>

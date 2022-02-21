@@ -14,6 +14,8 @@
         <item name="android:windowLightStatusBar">true</item>
         <!-- Customize your theme here. -->
         <item name="textInputStyle">@style/Widget.TipCalculatorSP22.TextInputLayout.DarkOutline</item>
+        <item name="radioButtonStyle">@style/Widget.TipCalculatorSP22.RadioButton.CustomText</item>
+
         <item name="textAppearanceHeadline1">@style/TextAppearance.MdcTypographyStyles.Headline1</item>
         <item name="textAppearanceHeadline2">@style/TextAppearance.MdcTypographyStyles.Headline2</item>
         <item name="textAppearanceHeadline3">@style/TextAppearance.MdcTypographyStyles.Headline3</item>
@@ -28,5 +30,6 @@
         <item name="textAppearanceCaption">@style/TextAppearance.MdcTypographyStyles.Caption</item>
         <item name="textAppearanceOverline">@style/TextAppearance.MdcTypographyStyles.Overline</item>
         <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.TipCalculator.SmallComponent</item>
+
     </style>
 </resources>

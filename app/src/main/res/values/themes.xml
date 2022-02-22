@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.TipCalculatorSP22" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.TipCalculatorSP22" parent="Base.MyTheme">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/primaryColor</item>
         <item name="colorPrimaryVariant">@color/primaryDarkColor</item>
@@ -11,10 +11,18 @@
         <item name="colorOnSecondary">@color/secondaryTextColor</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
-        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightStatusBar">false</item>
         <!-- Customize your theme here. -->
         <item name="textInputStyle">@style/Widget.TipCalculatorSP22.TextInputLayout.DarkOutline</item>
+
+
+
+
+    </style>
+
+    <style name="Base.MyTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <item name="radioButtonStyle">@style/Widget.TipCalculatorSP22.RadioButton.CustomText</item>
+        <item name="android:textViewStyle">@style/Widget.TipCalculatorSP22.TextView.CustomFont</item>
 
         <item name="textAppearanceHeadline1">@style/TextAppearance.MdcTypographyStyles.Headline1</item>
         <item name="textAppearanceHeadline2">@style/TextAppearance.MdcTypographyStyles.Headline2</item>
@@ -30,6 +38,5 @@
         <item name="textAppearanceCaption">@style/TextAppearance.MdcTypographyStyles.Caption</item>
         <item name="textAppearanceOverline">@style/TextAppearance.MdcTypographyStyles.Overline</item>
         <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.TipCalculator.SmallComponent</item>
-
     </style>
 </resources>

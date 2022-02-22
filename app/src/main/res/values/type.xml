@@ -28,7 +28,7 @@
     <style name="TextAppearance.MdcTypographyStyles.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
     <item name="fontFamily">@font/press_start_2p</item>
     <item name="android:fontFamily">@font/press_start_2p</item>
-    <item name="android:textSize">20sp</item>
+    <item name="android:textSize">18sp</item>
 </style>
     <style name="TextAppearance.MdcTypographyStyles.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
     <item name="fontFamily">@font/space_mono</item>
@@ -58,7 +58,7 @@
     <style name="TextAppearance.MdcTypographyStyles.Caption" parent="TextAppearance.MaterialComponents.Caption">
     <item name="fontFamily">@font/space_mono</item>
     <item name="android:fontFamily">@font/space_mono</item>
-    <item name="android:textSize">12sp</item>
+    <item name="android:textSize">14sp</item>
 </style>
     <style name="TextAppearance.MdcTypographyStyles.Overline" parent="TextAppearance.MaterialComponents.Overline">
     <item name="fontFamily">@font/space_mono</item>

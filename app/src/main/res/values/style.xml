@@ -22,6 +22,12 @@
     </style>
     <style name="Widget.TipCalculatorSP22.RadioButton.CustomText" parent="Widget.MaterialComponents.CompoundButton.RadioButton">
         <item name="android:textAppearance">?attr/textAppearanceBody2</item>
+        <item name="android:alpha">.7</item>
+    </style>
+
+    <style name="Widget.TipCalculatorSP22.TextView.CustomFont" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textAppearance">?attr/textAppearanceBody2</item>
+        <item name="android:alpha">.7</item>
     </style>
 
     <style name="Widget.TipCalculator.Slider.Bright" parent="Widget.MaterialComponents.Slider">

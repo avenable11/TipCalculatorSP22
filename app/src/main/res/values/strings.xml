@@ -8,7 +8,7 @@
     <string name="default_amount">0.00</string>
     <string name="total">Total</string>
     <string name="no_round">No Round</string>
-    <string name="roundTip">Round Tip</string>
+    <string name="round_tip">Round Tip</string>
     <string name="round_total">Round Total</string>
     <string name="rounding">Rounding</string>
     <string name="split_bill">Split the Bill?</string>
@@ -20,4 +20,20 @@
         <item>4 Ways</item>
     </string-array>
     <string name="each_pay">Each Pays</string>
+    <string name="settings_menu">Settings</string>
+    <string name="about_menu">About</string>
+    <string name="pound_symbol">£</string>
+    <string name="yen_symbol">¥</string>
+    <string name="euro_symbol">€</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="currency_key">currency_pref</string>
+    <string name="currency_title">Default Currency Symbol</string>
+    <string name="rounding_key">rounding_pref</string>
+    <string name="rounding_title">Default Rounding Behavior</string>
+    <string name="remember_tip_key">remember_tip_pref</string>
+    <string name="remember_tip_title">Use Default Percent</string>
+    <string name="remember_tip_summary">When enabled the app starts with the default tip defined below. Otherwise it uses the last tip percent that was set.</string>
+    <string name="default_tip_key">tip_pref</string>
+    <string name="default_tip_title">Default Tip Percent</string>
+
 </resources>

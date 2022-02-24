@@ -1,0 +1,27 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="currency_symbol_entries">
+        <item>@string/currency_symbol</item>
+        <item>@string/pound_symbol</item>
+        <item>@string/yen_symbol</item>
+        <item>@string/euro_symbol</item>
+    </string-array>
+
+    <string-array name="currency_symbol_values">
+        <item>@string/currency_symbol</item>
+        <item>@string/pound_symbol</item>
+        <item>@string/yen_symbol</item>
+        <item>@string/euro_symbol</item>
+    </string-array>
+
+    <string-array name="rounding_entries">
+        <item>@string/no_round</item>
+        <item>@string/round_tip</item>
+        <item>@string/round_total</item>
+    </string-array>
+    <string-array name="rounding_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+</resources>

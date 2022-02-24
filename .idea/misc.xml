@@ -4,15 +4,17 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Angela/AndroidStudioProjects/TipCalculatorSP22/app/src/main/res/layout/activity_main.xml" value="0.3671875" />
-        <entry key="..\:/Users/FORTI/StudioProjects/TipCalculatorSP22/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/avenable/AndroidStudioProjects/TipCalculatorSP22/app/src/main/res/font/shizuru.xml" value="0.35" />
         <entry key="..\:/Users/avenable/AndroidStudioProjects/TipCalculatorSP22/app/src/main/res/font/shojumaru.xml" value="0.35" />
         <entry key="..\:/Users/avenable/AndroidStudioProjects/TipCalculatorSP22/app/src/main/res/layout/activity_main.xml" value="0.5" />
         <entry key="..\:/Users/avenable/AndroidStudioProjects/TipCalculatorSP22/app/src/main/res/layout/list_item.xml" value="0.1" />
+        <entry key="..\:/Users/avenable/AndroidStudioProjects/TipCalculatorSP22/app/src/main/res/layout/settings_activity.xml" value="0.1" />
+        <entry key="..\:/Users/avenable/AndroidStudioProjects/TipCalculatorSP22/app/src/main/res/menu/options_menu.xml" value="0.33" />
+        <entry key="..\:/Users/avenable/AndroidStudioProjects/TipCalculatorSP22/app/src/main/res/xml/root_preferences.xml" value="0.5" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

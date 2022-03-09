@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.util.Log
 import android.view.ContextMenu
 import android.view.Menu
 import android.view.MenuItem
@@ -111,14 +112,20 @@ class MainActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         val pref = PreferenceManager.getDefaultSharedPreferences(this)
-        if(pref.getBoolean(getString(R.string.remember_tip_key), false))
-        {
-            val defaultTip = pref.getString(getString(R.string.default_tip_key),"15")
-            tipPercent = defaultTip!!.toInt() / 100.0
-            binding.tipPercentSlider.value = defaultTip.toFloat()
-            binding.tipPercentDisplay.text = defaultTip + "%"
+        if(pref.getBoolean(getString(R.string.remember_tip_key), false)) {
+            val defaultTip = pref.getString(getString(R.string.default_tip_key), "15")
+            var defaultTipNum = defaultTip!!.filter { it.isDigit() || it == '.' }
+            if (defaultTipNum.isNullOrEmpty())
+                defaultTipNum = "15"
+            try {
+                tipPercent = defaultTipNum!!.toInt() / 100.0
+                binding.tipPercentSlider.value = defaultTipNum.toFloat()
+                binding.tipPercentDisplay.text = defaultTipNum + "%"
+            } catch (e: Exception) {
+                Log.e("MainActivity.onResume", "There is an error with the default tip percent. check that there are no letters in the value")
+            }
         } else {
-            tipPercent = savedValues.getFloat(tipKey, 0.0f).toDouble()
+            tipPercent = savedValues.getFloat(tipKey, 0.15f).toDouble()
             binding.tipPercentSlider.value = tipPercent.toFloat() * 100.0f
             val percentFormat = NumberFormat.getPercentInstance()
             binding.tipPercentDisplay.text = percentFormat.format(tipPercent)
